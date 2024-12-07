@@ -64,7 +64,7 @@ Argument COMMAND is required in sideline backend."
     (`face (or sideline-cider--overlay-face
                'cider-result-overlay-face))))
 
-(defun sideline-cider--result (value value-type &optional _point overlay-face &rest _)
+(defun sideline-cider--result (value _value-type &optional _point overlay-face &rest _)
   "Display the result VALUE."
   (when (and value
              sideline-cider--buffer)
