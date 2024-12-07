@@ -32,9 +32,7 @@
 ;;; Code:
 
 (require 'sideline)
-
-(eval-when-compile
-  (require 'cider))
+(require 'cider)
 
 (defgroup sideline-cider nil
   "Show CIDER result with sideline."
@@ -82,7 +80,6 @@ Argument COMMAND is required in sideline backend."
 ;;;###autoload
 (defun sideline-cider-setup ()
   "Setup for `cider'."
-  (require 'cider)
   (add-hook 'sideline-mode-hook #'sideline-cider--mode)
   (sideline-cider--mode))  ; Run once
 
