@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "sideline-cider"
          "0.1.0"
          "Show CIDER result with sideline")
